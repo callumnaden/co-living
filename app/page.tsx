@@ -46,7 +46,7 @@ export default function Home() {
               Embracing Change, Inspiring Investment
               </h1>
               <p className="mt-4 text-xl text-gray-400">
-              Co_living Housing Australia pioneers a distinctive approach to real estate, aligning with market trends, innovation, and the evolving lifestyle preferences of today's generation.
+              Co_living Housing Australia pioneers a distinctive approach to real estate, aligning with market trends, innovation, and the evolving lifestyle preferences of today&apos;s generation.
               </p>
             </FadeIn>
             <div>
@@ -191,7 +191,7 @@ export default function Home() {
                   Positive Geared Investment
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p className="flex-auto">Our model allows you to purchase real estate, pay it off with small monthly instalments, and turn a profit every week. It's a transformative approach to real estate investment, ensuring that your investment works for you from the outset.</p>
+                  <p className="flex-auto">Our model allows you to purchase real estate, pay it off with small monthly instalments, and turn a profit every week. It&apos;s a transformative approach to real estate investment, ensuring that your investment works for you from the outset.</p>
                 </dd>
               </FadeIn>
         
@@ -204,7 +204,7 @@ export default function Home() {
                   Wide Accessibility for Investors
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p className="flex-auto">Our product is designed to be accessible to a wide range of investors, creating opportunities for financial growth and independence. Whether you're a first-time buyer or an experienced investor, our housing plan caters to diverse investment profiles.</p>
+                  <p className="flex-auto">Our product is designed to be accessible to a wide range of investors, creating opportunities for financial growth and independence. Whether you&apos;re a first-time buyer or an experienced investor, our housing plan caters to diverse investment profiles.</p>
                 </dd>
               </FadeIn>
        
@@ -262,11 +262,11 @@ export default function Home() {
               </FadeIn>
               <FadeIn className="">
                 <dt className="text-xl font-semibold leading-7 text-white mt-1">A Place Where You Belong</dt>
-                <dd className="mt-3 text-gray-400">Co_living is more than a housing solution; it's a lifestyle choice. We foster a sense of belonging and camaraderie among our residents. From shared common spaces to community events, we strive to create an environment where meaningful connections are formed.</dd>
+                <dd className="mt-3 text-gray-400">Co_living is more than a housing solution; it&apos;s a lifestyle choice. We foster a sense of belonging and camaraderie among our residents. From shared common spaces to community events, we strive to create an environment where meaningful connections are formed.</dd>
               </FadeIn>
               <FadeIn className="">
                 <dt className="text-xl font-semibold leading-7 text-white mt-1">Tailored Living Experiences</dt>
-                <dd className="mt-3 text-gray-400">Whether you're a young professional seeking a dynamic urban lifestyle or a senior adult looking for a supportive community, Co_living has a place for you. Our Melbourne-based residences cater to a diverse range of needs, ensuring that your living experience is tailored to your unique preferences.</dd>
+                <dd className="mt-3 text-gray-400">Whether you&apos;re a young professional seeking a dynamic urban lifestyle or a senior adult looking for a supportive community, Co_living has a place for you. Our Melbourne-based residences cater to a diverse range of needs, ensuring that your living experience is tailored to your unique preferences.</dd>
               </FadeIn>
           </dl>
         </FadeInStagger>
