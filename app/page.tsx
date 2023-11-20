@@ -39,11 +39,11 @@ export default function Home() {
       {/* Navbar section */}
 
         {/* Hero section */}
-        <FadeInStagger className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <FadeInStagger className="pb-80 pt-8 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
           <div className="relative mx-auto max-w-7xl">
             <FadeIn className="max-w-lg lg:max-w-[36rem]">
-              <h1 className="text-5xl font-bold tracking-tight text-white lg:text-6xl">
-              Embracing Change, Inspiring Investment
+              <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white lg:text-6xl">
+              Embracing Change,<br/>Inspiring Investment
               </h1>
               <p className="mt-4 text-xl text-gray-400">
               Co_living Housing Australia pioneers a distinctive approach to real estate, aligning with market trends, innovation, and the evolving lifestyle preferences of today&apos;s generation.
@@ -143,7 +143,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl pt-48 pb-24">
           <FadeIn className="mx-auto max-w-3xl sm:text-center">
               <h2 className="text-base font-semibold leading-7 text-indigo-400">Welcome to Co_living</h2>
-              <p className="mt-2 text-4xl font-bold tracking-tight text-white">A Revolutionary Approach to Homeownership</p>
+              <p className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white">A Revolutionary Approach to Homeownership</p>
               <p className="mt-6 text-lg leading-8 text-gray-300">
               Our innovative housing plan addresses the challenges faced by Generation Z and Millennials, offering a groundbreaking opportunity for first-time buyers.
               </p>
@@ -246,7 +246,7 @@ export default function Home() {
               <FadeInStagger className="mx-auto max-w-7xl py-24 sm:text-center">
           <FadeIn className="sm:mx-auto max-w-3xl mx-0">
             <h2 className="text-base font-semibold leading-7 text-indigo-400">Our vision</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Building Communities, One Home at a Time</p>
+            <p className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white">Building Communities, One Home at a Time</p>
             <p className="mt-6 text-lg leading-8 text-gray-400">
             At Co_living, we believe that where you live should be more than just a place; it should be a community that nurtures your lifestyle and fosters connections. 
             </p>
@@ -279,9 +279,18 @@ export default function Home() {
           <FadeInStagger className="overflow-hidden sm:pt-14 max-w-7xl mx-auto">
             <div className="">
               <div className="mx-auto max-w-7xl">
-                <div className="relative pb-16 pt-48 sm:pb-24">
-                  <FadeIn className='max-w-lg mt-16'>
-                    <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+
+                <Image
+                  src={seniorCouple}
+                  alt="App screenshot"
+                  className="mb-[-12%] sm:hidden rounded-2xl shadow-2xl ring-1 ring-white/10"
+                  width={2432}
+                  height={1442}
+                />
+
+                <div className="relative py-2 sm:pt-48 sm:pb-24">
+                  <FadeIn className='mx-w-full sm:max-w-lg mt-24 sm:mt-0 sm:pb-32'>
+                    <h2 id="sale-heading" className="text-3xl sm:text-4xl font-bold tracking-tight text-white md:text-5xl">
                     Welcome to the<br/>future of housing
 
                     </h2>
@@ -295,12 +304,12 @@ export default function Home() {
                     </div>
                   </FadeIn>
 
-                  <div className="absolute -top-32 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0">
+                  <div className="absolute hidden sm:block -top-32 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0">
                     <div className="ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8">
                       <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
                         <FadeIn className="flex-shrink-0">
                           <Image
-                            className="h-72 w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
+                            className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                             src={yougManPro}
                             alt=""
                           />
@@ -308,7 +317,7 @@ export default function Home() {
 
                         <FadeIn className="mt-6 flex-shrink-0 sm:mt-0">
                           <Image
-                            className="h-72 w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
+                            className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                             src={seniorCouple}
                             alt=""
                           />
@@ -317,7 +326,7 @@ export default function Home() {
                       <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
                         <FadeIn className="flex-shrink-0">
                           <Image
-                            className="h-72 w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
+                            className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                             src={kitchenCouple}
                             alt=""
                           />
@@ -325,7 +334,7 @@ export default function Home() {
 
                         <FadeIn className="mt-6 flex-shrink-0 sm:mt-0">
                           <Image
-                            className="h-72 w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
+                            className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                             src={manBike}
                             alt=""
                           />
@@ -348,7 +357,7 @@ export default function Home() {
   
     <FadeInStagger id="ContactUs" className="mx-auto max-w-7xl py-24 gap-x-8">
       <FadeIn className="mx-auto max-w-3xl sm:text-center">
-          <p className="mt-2 text-4xl font-bold tracking-tight text-white">Contact us</p>
+          <p className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white">Contact us</p>
           <p className="mt-6 text-lg leading-8 text-gray-400">
           Our friendly team would love to hear from you
           </p>
@@ -372,7 +381,7 @@ export default function Home() {
           <FadeIn className="bg-[#161B26] rounded-2xl mx-auto px-8 py-8 w-full">
             <h3 className="border-l border-indigo-600 pl-6 font-semibold text-white">Email address</h3>
             <div className="border-l border-indigo-600 pl-6 pt-2 not-italic text-gray-600">
-              <p>hello@coliving.au</p>
+              <p>admin@clha.au</p>
             </div>
           </FadeIn>
 
