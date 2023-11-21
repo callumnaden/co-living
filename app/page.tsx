@@ -381,7 +381,7 @@ export default function Home() {
               </div>
             <h3 className="font-semibold text-white">Call us</h3>
             <address className="not-italic text-gray-500">
-              <p>Mon-Fri from 8am to 5pm: <span className='text-gray-400'>0403 063 917</span></p>
+              <p>Mon-Fri from 8am to 5pm: <a className='text-gray-400 hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600' href="tel:0403 063 917">0403 063 917</a></p>
             </address>
           </FadeIn>
           <FadeIn className=" bg-gray-900 rounded-2xl mx-auto px-8 py-8 w-full">
@@ -390,7 +390,7 @@ export default function Home() {
               </div>
             <h3 className="font-semibold text-white">Support</h3>
             <address className="not-italic text-gray-500">
-              <p>We&apos;re here to help: <span className='text-gray-400'>admin@clha.au</span></p>
+              <p>We&apos;re here to help: <a className='text-gray-400 hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600' href="mailto:admin@clha.au">admin@clha.au</a></p>
             </address>
           </FadeIn>
         </div>
