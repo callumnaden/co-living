@@ -14,7 +14,7 @@ import youngSeniorMen from "../public/images/young-senior-men.jpg"
 import featureImageBig from "../public/images/young-people-bike-happy.jpg";
 import { FadeIn, FadeInStagger } from './components/FadeIn';
 
-import { CurrencyDollarIcon, ArrowTrendingUpIcon, FaceSmileIcon, PresentationChartLineIcon } from '@heroicons/react/24/outline'
+import { CurrencyDollarIcon, ArrowTrendingUpIcon, FaceSmileIcon, PresentationChartLineIcon, MapPinIcon, PhoneIcon, InboxIcon } from '@heroicons/react/24/outline'
 
 
 
@@ -365,26 +365,34 @@ export default function Home() {
    
    <div className='mt-16'>
 
-  <div className="grid grid-cols-1 gap-8 text-base leading-7 md:grid-cols-3 lg:mx-0 lg:max-w-none">
-          <FadeIn className="bg-[#161B26] rounded-2xl mx-auto px-8 py-8 w-full">
-            <h3 className="border-l border-indigo-600 pl-6 font-semibold text-white">Our office</h3>
-            <address className="border-l border-indigo-600 pl-6 pt-2 not-italic text-gray-600">
-              <p>Docklands VIC 3008</p>
+  <div className="grid grid-cols-1 gap-8 text-base leading-7 lg:grid-cols-3 lg:mx-0 lg:max-w-none">
+          <FadeIn className=" bg-gray-900 rounded-2xl mx-auto px-8 py-8 w-full">
+              <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+                  <MapPinIcon className="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+            <h3 className="font-semibold text-white">Our office</h3>
+            <address className="not-italic text-gray-400">
+              <p>427 Docklands Drive, Docklands VIC 3008</p>
             </address>
           </FadeIn>
-          <FadeIn className="bg-[#161B26] rounded-2xl mx-auto px-8 py-8 w-full">
-            <h3 className="border-l border-indigo-600 pl-6 font-semibold text-white">Phone number</h3>
-            <div className="border-l border-indigo-600 pl-6 pt-2 not-italic text-gray-600">
-              <p>0403 063 917</p>
-            </div>
+          <FadeIn className=" bg-gray-900 rounded-2xl mx-auto px-8 py-8 w-full">
+              <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+                  <PhoneIcon className="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+            <h3 className="font-semibold text-white">Call us</h3>
+            <address className="not-italic text-gray-500">
+              <p>Mon-Fri from 8am to 5pm: <span className='text-gray-400'>0403 063 917</span></p>
+            </address>
           </FadeIn>
-          <FadeIn className="bg-[#161B26] rounded-2xl mx-auto px-8 py-8 w-full">
-            <h3 className="border-l border-indigo-600 pl-6 font-semibold text-white">Email address</h3>
-            <div className="border-l border-indigo-600 pl-6 pt-2 not-italic text-gray-600">
-              <p>admin@clha.au</p>
-            </div>
+          <FadeIn className=" bg-gray-900 rounded-2xl mx-auto px-8 py-8 w-full">
+              <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+                  <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+            <h3 className="font-semibold text-white">Support</h3>
+            <address className="not-italic text-gray-500">
+              <p>We&apos;re here to help: <span className='text-gray-400'>admin@clha.au</span></p>
+            </address>
           </FadeIn>
-
         </div>
 </div>
 
