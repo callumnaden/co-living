@@ -31,7 +31,7 @@ export default function Home() {
         {/* Navbar section */}
         <FadeIn className="mx-auto max-w-7xl my-16 md:flex md:items-center md:justify-between">
           <div className="flex justify-center space-x-6 md:order-1">
-            <Image priority src={coLiving} width={240} alt="" />
+            <Image priority src={coLiving} width={240} alt="Co Living Logo" />
           </div>
         </FadeIn>
         {/* Navbar section */}
@@ -54,80 +54,87 @@ export default function Home() {
             <div>
               <div className="mt-10">
                 {/* Decorative image grid */}
-                <div
+                <FadeIn
                   aria-hidden="true"
                   className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
                 >
                   <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                     <div className="flex items-center space-x-6 lg:space-x-8">
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <FadeIn className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                           <Image
+                            sizes="20vw"
                             src={youngSeniorMen}
                             alt="Residents enjoying a shared kitchen area at Co Living."
                             className="h-full w-full object-cover object-center"
                           />
-                        </FadeIn>
-                        <FadeIn className="h-64 w-44 overflow-hidden rounded-lg">
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
+                            sizes="20vw"
                             src={happySenior}
                             alt="Resident enjoying a cup of coffee in kitchen area at Co Living."
                             className="h-full w-full object-cover object-center"
                           />
-                        </FadeIn>
+                        </div>
                       </div>
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <FadeIn className="h-64 w-44 overflow-hidden rounded-lg">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
+                            sizes="20vw"
                             src={coupleBike}
                             alt="Diverse group of residents participating in a social bike ride at Co Living."
                             className="h-full w-full object-cover object-center"
                           />
-                        </FadeIn>
-                        <FadeIn className="h-64 w-44 overflow-hidden rounded-lg">
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
+                            sizes="20vw"
                             src={happyCouple}
                             alt="Happy couple enjoying the view from Co Living communal terrace."
                             className="h-full w-full object-cover object-center"
                           />
-                        </FadeIn>
-                        <FadeIn className="h-64 w-44 overflow-hidden rounded-lg">
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
+                            sizes="20vw"
                             src={mumDaughter}
                             alt="Mum and daughter smiling and playing in Co Living housing."
                             className="h-full w-full object-cover object-center"
                           />
-                        </FadeIn>
+                        </div>
                       </div>
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <FadeIn className="h-64 w-44 overflow-hidden rounded-lg">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
+                            sizes="20vw"
                             src={glassesManRight}
                             alt="Man in glasses laughing and enjoying himself in Co Living space."
                             className="h-full w-full object-cover object-center"
                           />
-                        </FadeIn>
-                        <FadeIn className="h-64 w-44 overflow-hidden rounded-lg">
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
+                            sizes="20vw"
                             src={smilingGirl}
                             alt="Young resident enjoying a drink in calming area at Co Living."
                             className="h-full w-full object-cover object-center"
                           />
-                        </FadeIn>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 gap-y-8">
-                  <FadeIn>
+                </FadeIn>
+                <FadeIn className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 gap-y-8">
+                  <div>
                     <a
                       href="#ContactUs"
                       className="rounded-md bg-indigo-600 px-6 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Get in touch
                     </a>
-                  </FadeIn>
-                  <FadeIn>
+                  </div>
+                  <div>
                     <a
                       href="#AboutUs"
                       className="leading-6 rounded-md px-6 py-4 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
@@ -137,8 +144,8 @@ export default function Home() {
                         ↓
                       </span>
                     </a>
-                  </FadeIn>
-                </div>
+                  </div>
+                </FadeIn>
               </div>
             </div>
           </div>
@@ -164,7 +171,7 @@ export default function Home() {
 
           <div className="grid grid-flow-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-16 md:grid-row-3 lg:grid-row-2 gap-x-8 gap-y-16 md:gap-x-12 lg:gap-x-2 items-center">
             <FadeIn className="flex flex-col col-1 p-0 lg:pr-12">
-              <dt className="text-xl font-semibold leading-7 text-white">
+              <div className="text-xl font-semibold leading-7 text-white">
                 <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
                   <CurrencyDollarIcon
                     className="h-6 w-6 text-white"
@@ -173,19 +180,19 @@ export default function Home() {
                 </div>
                 Affordable Residences, <br className="hidden sm:block" />
                 Shared Living
-              </dt>
-              <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              </div>
+              <div className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p className="flex-auto">
                   Co_living introduces a unique housing model where several
                   tenants share one roof, making it an ideal opportunity for
                   Generation Z and Millennials to step into the property market
                   without the traditional financial burdens.
                 </p>
-              </dd>
+              </div>
             </FadeIn>
 
             <FadeIn className="flex flex-col col-1 lg:pl-12">
-              <dt className="text-xl font-semibold leading-7 text-white">
+              <div className="text-xl font-semibold leading-7 text-white">
                 <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
                   <PresentationChartLineIcon
                     className="h-6 w-6 text-white"
@@ -193,19 +200,20 @@ export default function Home() {
                   />
                 </div>
                 Market Trends and Innovation
-              </dt>
-              <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              </div>
+              <div className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p className="flex-auto">
                   Our housing plan is a reflection of our commitment to
                   providing a product that not only meets the demands of our
                   society but also introduces a new era of lifestyle and
                   investment.
                 </p>
-              </dd>
+              </div>
             </FadeIn>
 
             <FadeIn className="col-span-1 row-span-2 sm:col-span-2 row-start-5 row-end-6  sm:row-start-3 sm:row-end-4	lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:row-end-3">
               <Image
+                sizes="50vw"
                 src={happyCouple}
                 alt="Happy couple enjoying the view from Co Living communal terrace."
                 className="aspect-[7/5] h-full w-full sm:h-[340px] lg:h-[640px] rounded-2xl bg-gray-50 object-cover"
@@ -213,7 +221,7 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn className="flex flex-col col-1 lg:pr-12">
-              <dt className="text-xl font-semibold leading-7 text-white">
+              <div className="text-xl font-semibold leading-7 text-white">
                 <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
                   <ArrowTrendingUpIcon
                     className="h-6 w-6 text-white"
@@ -221,19 +229,19 @@ export default function Home() {
                   />
                 </div>
                 Positive Geared Investment
-              </dt>
-              <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              </div>
+              <div className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p className="flex-auto">
                   Our model allows you to purchase real estate, pay it off with
                   small monthly instalments, and turn a profit every week.
                   It&apos;s a transformative approach to real estate investment,
                   ensuring that your investment works for you from the outset.
                 </p>
-              </dd>
+              </div>
             </FadeIn>
 
             <FadeIn className="flex flex-col col-1 lg:pl-12">
-              <dt className="text-xl font-semibold leading-7 text-white">
+              <div className="text-xl font-semibold leading-7 text-white">
                 <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
                   <FaceSmileIcon
                     className="h-6 w-6 text-white"
@@ -241,8 +249,8 @@ export default function Home() {
                   />
                 </div>
                 Wide Accessibility for Investors
-              </dt>
-              <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+              </div>
+              <div className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p className="flex-auto">
                   Our product is designed to be accessible to a wide range of
                   investors, creating opportunities for financial growth and
@@ -250,7 +258,7 @@ export default function Home() {
                   experienced investor, our housing plan caters to diverse
                   investment profiles.
                 </p>
-              </dd>
+              </div>
             </FadeIn>
           </div>
         </div>
@@ -270,15 +278,16 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-gray-300">
               We understand the importance of making your money work for you,
               and our properties are meticulously curated to offer a dual
-              benefit – a home and an investment. From the day you sign, your
-              investment starts generating income, providing you with a solid
-              foundation for financial growth.
+              benefit &ndash; a home and an investment. From the day you sign,
+              your investment starts generating income, providing you with a
+              solid foundation for financial growth.
             </p>
           </div>
         </FadeIn>
         <FadeIn className="relative overflow-hidden pt-16">
           <div className="mx-auto max-w-7xl">
             <Image
+              sizes="60vw"
               src={featureImageBig}
               alt="Two care-free Co Living women residents enjoing a bike ride in the sun."
               className="mb-[-12%] rounded-2xl shadow-2xl ring-1 ring-white/10"
@@ -362,6 +371,7 @@ export default function Home() {
           <div className="">
             <div className="mx-auto max-w-7xl">
               <Image
+                sizes="20vw"
                 src={seniorCouple}
                 alt="App screenshot"
                 className="mb-[-12%] sm:hidden rounded-2xl shadow-2xl ring-1 ring-white/10"
@@ -398,14 +408,16 @@ export default function Home() {
                     <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
                       <FadeIn className="flex-shrink-0">
                         <Image
+                          sizes="20vw"
                           className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                           src={yougManPro}
-                          alt=""
+                          alt="Young professional guy enjoying working from home at Co Living."
                         />
                       </FadeIn>
 
                       <FadeIn className="mt-6 flex-shrink-0 sm:mt-0">
                         <Image
+                          sizes="20vw"
                           className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                           src={seniorCouple}
                           alt="Senior residents enjoying their own space at Co_Living."
@@ -415,6 +427,7 @@ export default function Home() {
                     <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
                       <FadeIn className="flex-shrink-0">
                         <Image
+                          sizes="20vw"
                           className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                           src={kitchenCouple}
                           alt="Communal kitchen space at Co_Living, featuring shared cooking facilities."
@@ -423,6 +436,7 @@ export default function Home() {
 
                       <FadeIn className="mt-6 flex-shrink-0 sm:mt-0">
                         <Image
+                          sizes="20vw"
                           className="h-full w-64 rounded-lg object-top object-cover md:h-72 md:w-72"
                           src={manBike}
                           alt="Co Living resident enjoying his morning bike ride to the office."
@@ -463,7 +477,7 @@ export default function Home() {
                 <PhoneIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <h3 className="font-semibold text-white">Call us</h3>
-              <address className="not-italic text-gray-500">
+              <address className="not-italic text-gray-400">
                 <p>
                   Mon-Fri from 8am to 5pm:{" "}
                   <a
@@ -480,7 +494,7 @@ export default function Home() {
                 <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <h3 className="font-semibold text-white">Support</h3>
-              <address className="not-italic text-gray-500">
+              <address className="not-italic text-gray-400">
                 <p>
                   We&apos;re here to help:{" "}
                   <a
@@ -499,10 +513,10 @@ export default function Home() {
       {/* Footer section */}
       <div className="mx-auto max-w-7xl pt-24 pb-12 md:flex md:items-center md:justify-between">
         <div className="flex justify-center space-x-6 md:order-1">
-          <Image priority src={coLiving} width={200} alt="" />
+          <Image priority src={coLiving} width={200} alt="Co Living Logo" />
         </div>
         <div className="mt-8 md:order-2 md:mt-0">
-          <p className="text-center text-xs leading-5 text-gray-500">
+          <p className="text-center text-xs leading-5 text-gray-400">
             &copy; 2027 Co_living. All rights reserved.
           </p>
         </div>
